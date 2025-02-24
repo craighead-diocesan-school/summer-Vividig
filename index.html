@@ -1,58 +1,78 @@
-<header>
-<h1>
-    My Summer
-  </h1>
-      
-  <h2>
-    Summer 2024-2025
-  </h2>
+<body>
+  <header>
+    <h1>
+      My Summer
+    </h1>
 
-</header>
-<main>
+    <h2>
+      Summer 2024-2025
+    </h2>
+
+  </header>
+  <main>
     <p>
-    I wasnt home
-  </p>
+      I wasnt home
+    </p>
 
-  <h2>
-    What I Did:
-  </h2>
- 
-  
-  <ul>
-    <li> Went out </li>
-    <li> Was in Christchurch </li>
-  </ul>
-</main>
+    <h2>
+      What I Did:
+    </h2>
 
-<footer>
-  <p>
-    © Vahini Nadikudi 2025 Craighead
-  </p>
-</footer>
+
+    <ul>
+      <li> Went out </li>
+      <li> Was in Christchurch </li>
+    </ul>
+  </main>
+
+  <footer>
+    <p>
+      © Vahini Nadikudi 2025 Craighead
+    </p>
+  </footer>
+</body>
+
 
 
 <style>
-h1 {
-  background: rgb(78, 133, 172);
-  font-family: sans-serif;
-  font-size: 3em;
-  color: rgb(255, 255, 255);
-  text-align: center;
-}
-h2{
+  body {
+    display: grid;
+    grid:
+      " h    m    .  " auto
+      " .    m    .  " auto
+      " .    m    f  " auto
+      / auto auto auto;
+  }
+
+  header {
+    grid-area: h;
+    background: orange;
+  }
+
+  main {
+    grid-area: m;
+    background: blue;
+  }
+
+  footer {
+    grid-area: f;
+    background: red;
+  }
+
+  h1 {
+    font-family: sans-serif;
+    font-size: 3em;
+    color: rgb(255, 255, 255);
+    text-align: center;
+  }
+
+  h2 {
     text-align: center;
 
-text-decoration: line-through;
+    text-transform: uppercase;
 
-text-transform: uppercase;
+    text-shadow: 2px 2px rgb(77, 110, 149);
 
-text-shadow: 2px 2px rgb(77, 110, 149);
+  }
 
-}
-h1:hover {
-  background: rgb(55, 85, 99);
-}
-
-
-
-  </style>
+</style>
