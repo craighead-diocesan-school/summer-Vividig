@@ -9,27 +9,41 @@
     </h2>
 
   </header>
-  <main>
-    <p>
-      I wasnt home
-    </p>
+  
+   
+<div class="line1">
+  <figure>
+       <img src="i dont have any.jpeg">
+       <figcaption> I was at home and in Christchurch</figcaption>
+    </figure>
 
-    <div>
-    <img src="i dont have any.jpeg">
-    <img src="i dont have any1.jpeg">
-    </div>
+    <figure>
+      <img src="i dont have any1.jpeg">
+      <figcaption> I was at home and in Christchurch</figcaption>
+   </figure>
+
+   <figure>
+    <img src="christchurch.jpeg">
+    <figcaption> I was here</figcaption>
+ </figure>
+
+
+</div>
+<div class="line2">
+   <figure>
+  <img src="timaru.png">
+  <figcaption> I was here</figcaption>
+</figure>
+<figure>
+  <img src="beach.avif">
+  <figcaption> I wasnt actually here. This is from unsplash</figcaption>
+</figure>
+<figure>
+  <img src="drink.avif">
+  <figcaption> I didn't drink this. This is from unsplash</figcaption>
+</figure>
+</div>
     
-
-    <h2>
-      What I Did:
-    </h2>
-
-
-    <ul>
-      <li> Went out </li>
-      <li> Was in Christchurch </li>
-    </ul>
-  </main>
 
   <footer>
     <p>
@@ -44,31 +58,38 @@
   body {
     display: grid;
     grid:
-      " h    m    .  " auto
-      " .    m    .  " auto
-      " .    m    f  " auto
-      / auto auto auto;
+      " h    h    h  " 0.2fr
+      " f    f    f  " 1fr
+      " f    f    f  " 1fr
+      " d    d    d  " 1fr
+      / 1fr 1fr 1fr;
   }
 
   header {
     grid-area: h;
-
+    padding: 1em;
+    background-color: rgb(130, 131, 143);
   }
 
-  main {
-    grid-area: m;
-
-  }
-
-  footer {
+  .line1 {
     grid-area: f;
-
+    padding: 2em;
+    padding-top: 3em;
+  }
+  .line2 {
+    grid-area: g;
+    padding: 2em;
+    padding-top: 3em;
+  }
+  footer {
+    grid-area: d;
+    padding: 1em;
   }
 
   h1 {
     font-family: sans-serif;
     font-size: 3em;
-    color: rgb(255, 255, 255);
+    color: rgb(0, 0, 0);
     text-align: center;
   }
 
@@ -77,15 +98,24 @@
 
     text-transform: uppercase;
 
-    text-shadow: 2px 2px rgb(77, 110, 149);
+    text-shadow: 2px 2px rgb(197, 197, 197);
 
   }
   img {
-  height: 10rem;
+  height: 13rem;
 }
 div {
   display: flex;
   justify-content: space-around;
+}
+body {
+  background-color: #fff;
+}
+
+@media (min-width: 30em) and (max-width: 80em) {
+  body {
+    background-color: rgb(221, 221, 221);
+  }
 }
 
 </style>
